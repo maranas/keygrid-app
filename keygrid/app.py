@@ -93,11 +93,17 @@ class Keygrid(toga.App):
                                 style=Pack(padding_bottom = 8,
                                            text_align = CENTER,
                                            font_size  = 16)))
-        self.key_input = toga.PasswordInput(placeholder = 'Enter your key here',
-                                            style       = Pack(padding_bottom = 16))
+        self.key_input = toga.PasswordInput(
+                placeholder = 'Enter your key here',
+                style       = Pack(padding_bottom = 2))
         self.key_input.on_change = self.on_change
         main_box.add( self.key_input )
-        
+
+        self.key_input_confirm = toga.PasswordInput(
+            placeholder = 'Enter your key again',
+            style       = Pack(padding_bottom = 16))
+        self.key_input_confirm.on_change = self.on_change
+        main_box.add( self.key_input_confirm )
         # add the rows
         for i in range(self.row_count):
             label = toga.Label('1 2 3 4 5 6 7 8 9 0 A B C D E F',
