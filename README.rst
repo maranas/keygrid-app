@@ -23,18 +23,14 @@ the app in development mode:
 
 ``briefcase dev``
 
-To build the app, run the command:
+To build the app for Android, run the commands:
 
 ``briefcase build android      // Builds a standalone version of the app.``
-
-``                             // android - builds for android. Can also be``
-
-``                             // linux, macos or ios``
-
 ``briefcase run android        // Runs the built binary.``
-
 ``briefcase package android    // Collects all dependencies for app distribution.``
 
+To build for other platforms, replace ``android`` with either `ios`, `macos`,
+`linux` or `windows. See ``briefcase`` documentation for more info.
 
 Briefcase and The Beeware Project
 =================================
