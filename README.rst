@@ -4,33 +4,44 @@ Keygrid
 Generates a grid of characters from a given key. This is an app that wraps around
 ``keygrid.py`` and adds a GUI using Toga.
 
+
 Building and running
 ====================
 
 This project requires Python 3. It is recommended to create a virtual environment
 for building.:
 
+
 ``python -m venv venv        // setup a virtual environment``
 
 ``source venv/bin/activate   // activate the virtual environment``
 
+
 This project requires `briefcase`. Install it in the virtual environment:
 
+
 ``pip install briefcase``
+
 
 Once the virtual environment is set up, go into the `Keygrid` subdirectory and run
 the app in development mode:
 
+
 ``briefcase dev``
+
 
 To build the app for Android, run the commands:
 
+
 ``briefcase build android      // Builds a standalone version of the app.``
+
 ``briefcase run android        // Runs the built binary.``
+
 ``briefcase package android    // Collects all dependencies for app distribution.``
 
 To build for other platforms, replace ``android`` with either `ios`, `macos`,
 `linux` or `windows. See ``briefcase`` documentation for more info.
+
 
 Briefcase and The Beeware Project
 =================================
