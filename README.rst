@@ -11,6 +11,7 @@ This project requires Python 3. It is recommended to create a virtual environmen
 for building.:
 
 ``python -m venv venv        // setup a virtual environment``
+
 ``source venv/bin/activate   // activate the virtual environment``
 
 This project requires `briefcase`. Install it in the virtual environment:
@@ -25,9 +26,13 @@ the app in development mode:
 To build the app, run the command:
 
 ``briefcase build android      // Builds a standalone version of the app.``
+
 ``                             // android - builds for android. Can also be``
+
 ``                             // linux, macos or ios``
+
 ``briefcase run android        // Runs the built binary.``
+
 ``briefcase package android    // Collects all dependencies for app distribution.``
 
 
