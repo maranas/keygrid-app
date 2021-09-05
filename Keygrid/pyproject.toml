@@ -1,0 +1,49 @@
+[tool.briefcase]
+project_name = "Keygrid"
+bundle = "com.ganglionsoft.keygrid"
+version = "0.0.1"
+url = "https://www.ganglionsoftware.com"
+license = "BSD license"
+author = 'Moises Aranas'
+author_email = "moises@ganglionsoftware.com"
+
+[tool.briefcase.app.Keygrid]
+formal_name = "Keygrid"
+description = "Keygrid - key grid generator"
+icon = "src/Keygrid/resources/Keygrid"
+sources = ['src/Keygrid']
+requires = []
+
+
+[tool.briefcase.app.Keygrid.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.Keygrid.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev20',
+]
+system_requires = [
+    'libgirepository1.0-dev',
+    'libcairo2-dev',
+    'libpango1.0-dev',
+    'libwebkitgtk-3.0-0',
+    'gir1.2-webkit-3.0',
+]
+
+[tool.briefcase.app.Keygrid.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev20',
+]
+
+# Mobile deployments
+[tool.briefcase.app.Keygrid.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.Keygrid.android]
+requires = [
+    'toga-android>=0.3.0.dev20',
+]
